@@ -214,3 +214,29 @@ let anotherUnsorted = [23, 32, 2, 34, 56, 21, 4, 66];
 console.log(anotherUnsorted);
 anotherUnsorted.sort( (a, b) => a - b)
 console.log(anotherUnsorted);
+
+let users = [
+    {
+        first: 'Brian',
+        last: 'Stanton'
+    },
+    {
+        first: 'Michael',
+        last: 'Jordan'
+    },
+    {
+        first: 'Matt',
+        last: 'Groening'
+    },
+    {
+        first: 'Homer',
+        last: 'Simpson'
+    },
+    {
+        first: 'James',
+        last: 'Smith'
+    }
+];
+
+users.sort( (a, b) => a.last > b.last ? 1 : -1)
+console.log(users);
